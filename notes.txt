@@ -1,0 +1,5 @@
+ - The order of the loads is what matters. For example, in part1.html if we
+   load the star before the sky then the sky will cover up the star, it is
+   intuitive as drag and drop order but in code.
+
+
