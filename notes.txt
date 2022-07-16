@@ -74,4 +74,10 @@
 - The `body` property is a default and highly extensible function given to a
   Physics Sprite upon initialisation referencing its Arcade Physics Body
 
+- In order for things to be collidable, a Collider object must be created 
 
+- The Collider object monitors two physics objects (even Groups are objects).
+  If that happens then a callback is invoked which could be custom or built in
+  or plugin based, it's just a function 
+
+-

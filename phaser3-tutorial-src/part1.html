@@ -84,6 +84,13 @@
             frameRate: 10,
             repeat: -1
         });
+
+        //player.body.setGravityY(300); - for whatever reason, maybe updates,
+        //the player rejects the ground as a default behaviour unlike what is
+        //stated at - https://phaser.io/tutorials/making-your-first-phaser-3-game/part6
+        
+        this.physics.add.collider(player, platforms);
+
     }
 
     function update ()
