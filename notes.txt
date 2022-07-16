@@ -1,5 +1,44 @@
- - The order of the loads is what matters. For example, in part1.html if we
+- The order of the loads is what matters. For example, in part1.html if we
    load the star before the sky then the sky will cover up the star, it is
-   intuitive as drag and drop order but in code.
+   intuitive as drag and drop order but in code
+
+- Objects may be off screen (outside the min and max coords specified) but
+   that does not mean that they are off Scene. These objects still 'exist' in
+   the scope for Phaser 
+
+- `this.add.image` creates a new Image Game Object and adds it to current
+     Scenes display list
+
+- The Scene exists in infinity in all sides, it has no fixed dimensions
+
+- The Camera System controls your view into the Scene and you can interact with
+  the camera as you want
+
+- `this.physics` utilises the Arcade Physics system which must be added to the
+  Game Config as a Phaser 'dependency' of sorts
+
+- There are two types of physics bodies in Arcade Physics: Dynamic and Static.
+  Dynamic bodies can react to physics events while Static bodies cannot 
+
+- Dynamic bodies: balls, boxes, destructibles, etc
+
+- Static bodies: platforms, walls, ground, non-reactive collidables, etc
+
+- Similar objects can be categorised in a Group and controlled as a single
+  unit
+
+- You can check for effects between Groups since they are treated like a single
+  unit. For example, you can check for collisions between Groups
+
+- Groups can create their own Game Objects with the `create` function (acts
+  like a keyword within Phaser)
+
+- Properties are transferred from Groups like traits from parents. A Physics
+  Group, thus, will create physics enabled children. 
+
+- `setScale(int n)` sets the scale for a property. 32x32 -> setScale(2) = 64x64
+
+- `refreshBody()` refreshes the changes in the world that were made that differ
+  from initialised loading of those assets/objects
 
 
