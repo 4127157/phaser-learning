@@ -41,4 +41,37 @@
 - `refreshBody()` refreshes the changes in the world that were made that differ
   from initialised loading of those assets/objects
 
+- `this.physics.add` is a Physics Game Object Factory invocation
+
+- Unless specified, Physics Game Object Factory creates a Dynamic Physics body
+  by default, such as with sprites
+
+- A `spritesheet` contains animation frames and is segmented
+
+- Phaser support flipping sprites which means that instead of having frames for
+  walking right and also left one can only create frames for either side and
+  then simply flip that side for the other direction in the code
+
+- `frameHeight` and `frameWidth` properties in the `preload` segment the
+  spritesheet accordingly so frames can later be referenced as whole pieces of
+  how they are divided up. Frame 1 will refer to (frameHeight)x(frameWidth) and
+  Frame 2 will refer to (frameHeight*2)x(frameWidth*2) and so on until the end
+  of the spritesheet
+
+- The `repeat: -1` property indicates an animation to loop forever
+
+- A characters movement in left and right frames as well as camera facing (or
+  idle) frames combined is referred to as the `run cycle`. A single loop of run
+  animations
+
+- The Animation Manager is a global system which means animations created in it
+  can be instanced-ly used for n number of Game Objects in the global scope
+
+- Phaser's physics systems are plugins. It ships with a standard collection of
+  Arcade, Impact and Matter.js Physics. Arcade Physics is quite a lightweight
+  physics system, most suitable for mobile browsers
+
+- The `body` property is a default and highly extensible function given to a
+  Physics Sprite upon initialisation referencing its Arcade Physics Body
+
 
