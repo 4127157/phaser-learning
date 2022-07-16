@@ -80,4 +80,15 @@
   If that happens then a callback is invoked which could be custom or built in
   or plugin based, it's just a function 
 
--
+- Phaser has a built-in Keyboard Manager which means that event listeners are
+  made obsolete for most of the stuff that is required in a game
+
+- The `createCursorKeys()` function on the cursors object populates it with
+  four directional properties
+
+- The cursor properties must be polled in the `update` loop
+
+- Phaser allows for complex movement that takes in account momentum and
+  acceleration
+
+
