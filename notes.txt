@@ -91,4 +91,14 @@
 - Phaser allows for complex movement that takes in account momentum and
   acceleration
 
+ - `setXY` in physics groups lets us define starting positions of objects
+
+ - Text Game Objects can be utilised for game scores
+
+ - Items like scores need not be preloaded and can be init in the create
+   function
+
+- The default font that Phaser uses for Text Game Object is Courier unless
+  defined otherwise
+
 
