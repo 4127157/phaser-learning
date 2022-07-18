@@ -103,7 +103,7 @@
             child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
         });
 
-        this.physics.add.colliders(stars, platforms); //Allows stars to collide
+        this.physics.add.collider(stars, platforms); //Allows stars to collide
                                                       //with platforms
         this.physics.add.overlap(player, stars, collectStar, null, this);
         //Trigger the `collectStar` function on overlap
