@@ -101,4 +101,4 @@
 - The default font that Phaser uses for Text Game Object is Courier unless
   defined otherwise
 
-
+- `countActive` is a Group method that counts how many objects of type exist
